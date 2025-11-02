@@ -1,0 +1,16 @@
+create database usuarios
+use usuarios
+
+create table Registro
+(id_registro int identity(1,1),
+nombre_usuario varchar (250),
+contraseña varchar(250),
+constraint pk_Registro primary key (id_registro),
+)
+
+insert into Registro (nombre_usuario, contraseña)
+values ('Gabriel','12345'),
+		('JULIAN','78901'),
+		('Camila','5677');
+
+select * from Registro
